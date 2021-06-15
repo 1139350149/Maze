@@ -1,16 +1,11 @@
 package mapEntity;
 
-public class Door extends MapSite {
+public class Door implements MapSite {
     private boolean isOpen;
 
     @Override
-    public void enter() {
-        if (this.isOpen) {
-            System.out.println("You enter the door");
-        }
-        else{
-            System.out.println("The door is closed, you can't enter it.");
-        }
+    public boolean enter(int orientation) {
+        return this.isOpen;
     }
 
     public Door(){

@@ -2,14 +2,14 @@ package itemEntity;
 
 import playerEntity.Player;
 
-public class Apple implements Item {
+public class Banana implements Item {
     private int mark = 10;
     private boolean picked = false;
 
     @Override
     public void getItem(Player player) {
         if (!picked) {
-            player.setMark(player.getMark() + this.mark);
+            player.setMark(player.getMark() + mark);
             picked = true;
         }
     }
@@ -21,6 +21,7 @@ public class Apple implements Item {
 
     @Override
     public String toString() {
-        return "苹果";
+        return "香蕉";
     }
 }
+

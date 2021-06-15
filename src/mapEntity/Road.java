@@ -1,6 +1,6 @@
 package mapEntity;
 
-public class Wall implements MapSite {
+public class Road implements MapSite {
     private Coordinate coordinate;
 
     public Coordinate getCoordinate() {
@@ -13,11 +13,11 @@ public class Wall implements MapSite {
 
     @Override
     public boolean enter(int orientation) {
-        return false;
+        return true;
     }
 
     @Override
     public String toString() {
-        return "Wall";
+        return "Road";
     }
 }

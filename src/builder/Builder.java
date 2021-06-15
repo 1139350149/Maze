@@ -1,6 +1,11 @@
 package builder;
 
-public abstract class Builder {
-    public abstract void buildMap();
-    public abstract void buildRoom();
+import mapEntity.Map;
+
+public interface Builder {
+    void buildMap(int quantity);
+    void buildRoom(int roomCount);
+    void buildEnemy();
+
+    public Map getProduct();
 }

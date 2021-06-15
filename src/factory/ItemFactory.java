@@ -1,5 +1,7 @@
 package factory;
 
-public class ItemFactory {
+import itemEntity.Item;
 
+public interface ItemFactory {
+    Item getItem();
 }
